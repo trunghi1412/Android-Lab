@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/trashName"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/trashRestore"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trashNumber"
+        android:layout_width="202dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="23dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/trashRestore"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trashName" />
+
+    <Button
+        android:id="@+id/trashDelete"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/ic_delete_forever"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/trashRestore"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="56dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_restore"
+        app:layout_constraintEnd_toStartOf="@+id/trashDelete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
